@@ -1,0 +1,14 @@
+@charset "UTF-8";
+html, body {
+  font-family: 'Helvetica', '微軟正黑體', sans-serif; }
+
+h1 {
+  color: #ff00ff; }
+
+.parallax-container {
+  color: rgba(255, 255, 255, 0.9); }
+  .parallax-container .section {
+    width: 100%; }
+
+footer.page-footer {
+  margin: 0; }
