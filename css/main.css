@@ -15,8 +15,22 @@ h1 {
 footer.page-footer {
   margin: 0; }
 
-.icon-block .material-icons {
-  font-size: inherit; }
+.icon-block {
+  padding: 0 15px; }
+  .icon-block .material-icons {
+    font-size: inherit; }
 
 .pinned {
   z-index: 10; }
+
+.activity-list ul li {
+  opacity: 0; }
+  .activity-list ul li h5 {
+    color: rgba(0, 0, 0, 0.87);
+    margin: 0; }
+  .activity-list ul li p {
+    margin: 0;
+    font-size: 1.2em; }
+
+.about-openmonth {
+  padding: 0 50px; }

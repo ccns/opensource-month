@@ -48,23 +48,33 @@
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
-        <br><br><br><br>
+        <br>
+        <br>
+        <br>
+        <br>
         <h1 class="header center pink-text text-lighten-2">2015 成大開源月</h1>
         <div class="row center">
           <h5 class="header col s12 grey-text text-lighten-2">敞開心胸，擁抱開源</h5>
         </div>
-        <br><br>
+        <br>
+        <br>
       </div>
     </div>
-    <div class="parallax"><img src="img/background1.jpg" alt="Unsplashed background img 1"></div>
+    <div class="parallax">
+      <img src="img/background1.jpg" alt="Unsplashed background img 1">
+    </div>
   </div>
 
 
   <div class="container">
     <div class="section scrollspy" id="about">
+      <div class="row center about-openmonth">
+        <h3>關於開源月</h3>
+        <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+      </div>
 
       <!--   Icon Section   -->
-      <div class="row">
+      <div class="row" style="opacity: 0" id="activity-intro">
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">forum</i></h2>
@@ -79,14 +89,15 @@
             <h2 class="center brown-text"><i class="material-icons">group</i></h2>
             <h4 class="center">工作坊</h4>
 
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms
+              allow for a more unified user experience.</p>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-            <h4 class="center">Easy to work with</h4>
+            <h2 class="center brown-text"><i class="material-icons">code</i></h2>
+            <h4 class="center">專案實作</h4>
 
             <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
           </div>
@@ -95,29 +106,152 @@
 
       <div class="row activity-list">
 
-        <div class="col l12 s12 title">
+        <div class="col l6 s12">
+          <blockquote>
+            <h4>演講</h4>
+          </blockquote>
+
+          <ul id="speech-topic">
+            <li>
+              <a class="modal-trigger" href="#modal-os">
+                <div class="row">
+                  <div class="col s3">
+                    <img src="img/os.png" alt="" class="circle responsive-img">
+                  </div>
+                  <div class="col s9">
+                    <h5>開源文化</h5>
+                    <p class="grey-text">
+                      講題
+                      <br> 講者
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <div id="modal-os" class="modal modal-fixed-footer">
+              <div class="modal-content">
+                <h4>開源文化</h4>
+                <p>A bunch of text</p>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close btn-flat">關閉</a>
+              </div>
+            </div>
+
+            <li>
+              <a class="modal-trigger" href="#modal-is">
+                <div class="row">
+                  <div class="col s3">
+                    <img src="img/is.png" alt="" class="circle responsive-img">
+                  </div>
+                  <div class="col s9">
+                    <h5>資訊安全</h5>
+                    <p class="grey-text">
+                      講題
+                      <br> 講者
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <div id="modal-is" class="modal modal-fixed-footer">
+              <div class="modal-content">
+                <h4>資訊安全</h4>
+                <p>A bunch of text</p>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close btn-flat">關閉</a>
+              </div>
+            </div>
+
+            <li>
+              <a class="modal-trigger" href="#modal-od">
+                <div class="row">
+                  <div class="col s3">
+                    <img src="img/od.png" alt="" class="circle responsive-img">
+                  </div>
+                  <div class="col s9">
+                    <h5>開放資料</h5>
+                    <p class="grey-text">
+                      講題
+                      <br> 講者
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <div id="modal-od" class="modal modal-fixed-footer">
+              <div class="modal-content">
+                <h4>開放資料</h4>
+                <p>A bunch of text</p>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close btn-flat">關閉</a>
+              </div>
+            </div>
+          </ul>
+        </div>
+
+        <div class="col l6 s12">
           <blockquote>
             <h4>工作坊</h4>
           </blockquote>
-        </div>
 
-        <div class="col l12 s12">
-          <ul>
-
+          <ul id="workshop-topic">
             <li>
-              <div class="row">
-                <div class="col s2"><img src="img/wp.png" alt="" class="circle responsive-img"></div>
-                <div class="col s10"><h5>Wordpress 工作坊</h5></div>
-              </div>
+              <a class="modal-trigger" href="#modal-wp">
+                <div class="row">
+                  <div class="col s3">
+                    <img src="img/wp.png" alt="" class="circle responsive-img">
+                  </div>
+                  <div class="col s9">
+                    <h5>Wordpress 工作坊</h5>
+                    <p class="grey-text">
+                      講者
+                    </p>
+                  </div>
+                </div>
+              </a>
             </li>
 
-            <li>
-              <div class="row">
-                <div class="col s2"><img src="img/ror.png" alt="" class="circle responsive-img"></div>
-                <div class="col s10"><h5>Ruby On Rails 工作坊</h5></div>
+            <div id="modal-wp" class="modal modal-fixed-footer">
+              <div class="modal-content">
+                <h4>Wordpress 工作坊</h4>
+                <p>A bunch of text</p>
               </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close btn-flat">關閉</a>
+              </div>
+            </div>
+
+            <li>
+              <a class="modal-trigger" href="#modal-ror">
+                <div class="row">
+                  <div class="col s3">
+                    <img src="img/ror.png" alt="" class="circle responsive-img">
+                  </div>
+                  <div class="col s9">
+                    <h5>Ruby On Rails 工作坊</h5>
+                    <p class="grey-text">
+                      講者
+                    </p>
+                  </div>
+                </div>
+              </a>
             </li>
 
+            <div id="modal-ror" class="modal modal-fixed-footer">
+              <div class="modal-content">
+                <h4>Ruby On Rails 工作坊</h4>
+                <p>A bunch of text</p>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close btn-flat">關閉</a>
+              </div>
+            </div>
           </ul>
         </div>
 
@@ -135,7 +269,9 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="http://materializecss.com/templates/parallax-template/background2.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax">
+      <img src="http://materializecss.com/templates/parallax-template/background2.jpg" alt="Unsplashed background img 2">
+    </div>
   </div>
 
   <div class="container">
@@ -143,9 +279,10 @@
 
       <div class="row">
         <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+          <h4>進入開源</h4>
+          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra
+            ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices
+            erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
         </div>
       </div>
 
@@ -161,7 +298,9 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="http://materializecss.com/templates/parallax-template/background3.jpg" alt="Unsplashed background img 3"></div>
+    <div class="parallax">
+      <img src="http://materializecss.com/templates/parallax-template/background3.jpg" alt="Unsplashed background img 3">
+    </div>
   </div>
 
 
@@ -173,7 +312,9 @@
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4>Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra
+            ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices
+            erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
         </div>
       </div>
 
@@ -197,7 +338,7 @@
           <ul>
             <li><a class="white-text" href="http://web.ccns.ncku.edu.tw/">CCNS Website</a></li>
             <li><a class="white-text" href="https://github.com/ccns">CCNS Github</a></li>
-            <li><a class="white-text" href="https://github.com/ccns/opensource-month">Opensource Month Github</a></li>
+            <li><a class="white-text" href="https://github.com/ccns/opensource-month">Website Source Code</a></li>
           </ul>
         </div>
       </div>
@@ -213,13 +354,26 @@
     (function($) {
       $(function() {
 
+        $('.modal-trigger').leanModal();
         $('.button-collapse').sideNav();
-        $('.pinned').pushpin({ top: 0 });
+        $('.pinned').pushpin({
+          top: 0
+        });
         $('.parallax').parallax();
         $('.scrollspy').scrollSpy();
-        var options = [
-          //{selector: '#about', offset: 10, callback: 'Materialize.fadeInImage("#about")' }
-        ];
+        var options = [{
+          selector: '#speech-topic',
+          offset: ($('.activity-list').offset().top - 250),
+          callback: 'Materialize.showStaggeredList("#speech-topic")'
+        }, {
+          selector: '#workshop-topic',
+          offset: ($('.activity-list').offset().top - 250),
+          callback: 'Materialize.showStaggeredList("#workshop-topic")'
+        }, {
+          selector: '#activity-intro',
+          offset: ($('#activity-intro').offset().top - 250),
+          callback: 'Materialize.fadeInImage("#activity-intro")'
+        }];
         Materialize.scrollFire(options);
 
       }); // end of document ready
