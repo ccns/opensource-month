@@ -1,9 +1,12 @@
 // out: ./main.css
+@import "rwd"
+
 html, body
   font-family: 'Roboto', '微軟正黑體', sans-serif
 
-h1
-  color: #ff00ff
+.brand-logo
+  @include breakpoint(mobile)
+    font-size: 1.8rem !important
 
 .parallax-container
   min-height: 380px;
@@ -24,6 +27,8 @@ footer.page-footer
   z-index: 10
 
 .activity-list
+  blockquote h4 small
+    font-size: 0.5em
   ul li
     opacity: 0
     h5
@@ -32,6 +37,16 @@ footer.page-footer
     p
       margin: 0
       font-size: 1.2em
+    a
+      outline: none
 
-.about-openmonth
+.full-width-intro
   padding: 0 50px
+
+.schedule-table
+  th, td
+    text-align: center
+    font-size: 1.5em
+    img
+      width: 1.5em
+      vertical-align: middle

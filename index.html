@@ -23,7 +23,7 @@
   <link href="css/main.css" rel="stylesheet">
 </head>
 
-<body ng-app="myApp">
+<body>
 
   <nav class="grey darken-3 pinned" role="navigation">
     <div class="nav-wrapper container">
@@ -34,16 +34,16 @@
         <li><a href="#schedule" du-smooth-scroll du-scrollspy>議程</a></li>
         <li><a href="http://web.ccns.ncku.edu.tw/">CCNS</a></li>
       </ul>
-
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#about">關於開源月</a></li>
-        <li><a href="#entry">進入開源</a></li>
-        <li><a href="#schedule">議程</a></li>
-        <li><a href="http://web.ccns.ncku.edu.tw/">CCNS</a></li>
-      </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
+
+  <ul id="nav-mobile" class="side-nav">
+    <li><a href="#about">關於開源月</a></li>
+    <li><a href="#entry">進入開源</a></li>
+    <li><a href="#schedule">議程</a></li>
+    <li><a href="http://web.ccns.ncku.edu.tw/">CCNS</a></li>
+  </ul>
 
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
@@ -68,9 +68,15 @@
 
   <div class="container">
     <div class="section scrollspy" id="about">
-      <div class="row center about-openmonth">
+      <div class="row center full-width-intro">
         <h3>關於開源月</h3>
-        <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+        <p class="light">
+          開源月介紹開源月介紹開源月介紹開源月介紹開源月介紹
+          開源月介紹開源月介紹開源月介紹開源月介紹開源月介紹
+          開源月介紹開源月介紹開源月介紹開源月介紹開源月介紹
+          開源月介紹開源月介紹開源月介紹開源月介紹開源月介紹
+          開源月介紹開源月介紹開源月介紹開源月介紹開源月介紹
+        </p>
       </div>
 
       <!--   Icon Section   -->
@@ -80,7 +86,13 @@
             <h2 class="center brown-text"><i class="material-icons">forum</i></h2>
             <h4 class="center">演講</h4>
 
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+            <p class="light">
+              演講介紹演講介紹演講介紹演講介紹演講介紹
+              演講介紹演講介紹演講介紹演講介紹演講介紹
+              演講介紹演講介紹演講介紹演講介紹演講介紹
+              演講介紹演講介紹演講介紹演講介紹演講介紹
+              演講介紹演講介紹演講介紹演講介紹演講介紹
+            </p>
           </div>
         </div>
 
@@ -89,8 +101,13 @@
             <h2 class="center brown-text"><i class="material-icons">group</i></h2>
             <h4 class="center">工作坊</h4>
 
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms
-              allow for a more unified user experience.</p>
+            <p class="light">
+              工作坊介紹工作坊介紹工作坊介紹工作坊介紹工作坊介紹
+              工作坊介紹工作坊介紹工作坊介紹工作坊介紹工作坊介紹
+              工作坊介紹工作坊介紹工作坊介紹工作坊介紹工作坊介紹
+              工作坊介紹工作坊介紹工作坊介紹工作坊介紹工作坊介紹
+              工作坊介紹工作坊介紹工作坊介紹工作坊介紹工作坊介紹
+            </p>
           </div>
         </div>
 
@@ -99,7 +116,14 @@
             <h2 class="center brown-text"><i class="material-icons">code</i></h2>
             <h4 class="center">專案實作</h4>
 
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+            <p class="light">
+              專案實作介紹專案實作介紹專案實作介紹專案實作介紹專案實作介紹
+              專案實作介紹專案實作介紹專案實作介紹專案實作介紹專案實作介紹
+              專案實作介紹專案實作介紹專案實作介紹專案實作介紹專案實作介紹
+              專案實作介紹專案實作介紹專案實作介紹專案實作介紹專案實作介紹
+              專案實作介紹專案實作介紹專案實作介紹專案實作介紹專案實作介紹
+            </p>
+            <a href="#!">詳細資訊</a>
           </div>
         </div>
       </div>
@@ -108,7 +132,7 @@
 
         <div class="col l6 s12">
           <blockquote>
-            <h4>演講</h4>
+            <h4>演講 <small>點擊顯示詳細資訊</small></h4>
           </blockquote>
 
           <ul id="speech-topic">
@@ -197,7 +221,7 @@
 
         <div class="col l6 s12">
           <blockquote>
-            <h4>工作坊</h4>
+            <h4>工作坊 <small>點擊顯示詳細資訊</small></h4>
           </blockquote>
 
           <ul id="workshop-topic">
@@ -265,7 +289,9 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h5 class="header col s12 light">
+            這裡可以放一句有關開源的話這裡可以放一句有關開源的話
+          </h5>
         </div>
       </div>
     </div>
@@ -277,13 +303,16 @@
   <div class="container">
     <div class="section scrollspy" id="entry">
 
-      <div class="row">
-        <div class="col s12 center">
-          <h4>進入開源</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra
-            ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices
-            erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-        </div>
+      <div class="row center full-width-intro">
+        <h4>進入開源</h4>
+        <p class="light">
+          教學文介紹教學文介紹教學文介紹教學文介紹教學文介紹
+          教學文介紹教學文介紹教學文介紹教學文介紹教學文介紹
+          教學文介紹教學文介紹教學文介紹教學文介紹教學文介紹
+          教學文介紹教學文介紹教學文介紹教學文介紹教學文介紹
+          教學文介紹教學文介紹教學文介紹教學文介紹教學文介紹
+        </p>
+        <a class="waves-effect waves-light btn-large pink lighten-2">進入開源的世界</a>
       </div>
 
     </div>
@@ -294,7 +323,10 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+
+            <h5 class="header col s12 light">
+              這裡可以放一句有關開源的話這裡可以放一句有關開源的話
+            </h5>
         </div>
       </div>
     </div>
@@ -308,14 +340,95 @@
   <div class="container">
     <div class="section scrollspy" id="schedule">
 
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra
-            ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices
-            erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-        </div>
+      <div class="row center">
+        <h4>議程</h4>
+        <h6>點擊圖示可顯示詳細資訊</h6>
+        <dir class="col l10 offset-l1 s12">
+          <table class="schedule-table">
+            <thead>
+              <tr class="pink lighten-2 white-text">
+                  <th colspan="7"><h5>2015年 10月</h5></th>
+              </tr>
+              <tr>
+                <th>日</th>
+                <th>一</th>
+                <th>二</th>
+                <th>三</th>
+                <th>四</th>
+                <th>五</th>
+                <th>六</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>12</td>
+                <td>
+                  <a href="#modal-os" class="tooltipped modal-trigger" data-position="top" data-delay="50" data-tooltip="10/13 開源文化 地點：">
+                    <img src="img/os.png" alt="" class="circle responsive-img">
+                  </a>
+                </td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+              </tr>
+              <tr>
+                <td>18</td>
+                <td>19</td>
+                <td>
+                  <a href="#modal-is" class="tooltipped modal-trigger" data-position="top" data-delay="50" data-tooltip="10/20 資訊安全 地點：">
+                    <img src="img/is.png" alt="" class="circle responsive-img">
+                  </a>
+                </td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>
+                  <a href="#modal-wp" class="tooltipped modal-trigger" data-position="top" data-delay="50" data-tooltip="10/24 Wordpress工作坊 地點：">
+                    <img src="img/wp.png" alt="" class="circle responsive-img">
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>25</td>
+                <td>26</td>
+                <td>
+                  <a href="#modal-od" class="tooltipped modal-trigger" data-position="top" data-delay="50" data-tooltip="10/27 開放資料 地點：">
+                    <img src="img/od.png" alt="" class="circle responsive-img">
+                  </a>
+                </td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+                <td>
+                  <a href="#modal-ror" class="tooltipped modal-trigger" data-position="top" data-delay="50" data-tooltip="10/31 RubyOnRails工作坊 地點：">
+                    <img src="img/ror.png" alt="" class="circle responsive-img">
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </dir>
       </div>
 
     </div>
@@ -361,6 +474,7 @@
         });
         $('.parallax').parallax();
         $('.scrollspy').scrollSpy();
+        $('.tooltipped').tooltip({delay: 50});
         var options = [{
           selector: '#speech-topic',
           offset: ($('.activity-list').offset().top - 250),

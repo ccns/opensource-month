@@ -2,8 +2,9 @@
 html, body {
   font-family: 'Roboto', '微軟正黑體', sans-serif; }
 
-h1 {
-  color: #ff00ff; }
+@media only screen and (max-width: 320px) {
+  .brand-logo {
+    font-size: 1.8rem !important; } }
 
 .parallax-container {
   min-height: 380px;
@@ -23,6 +24,9 @@ footer.page-footer {
 .pinned {
   z-index: 10; }
 
+.activity-list blockquote h4 small {
+  font-size: 0.5em; }
+
 .activity-list ul li {
   opacity: 0; }
   .activity-list ul li h5 {
@@ -31,6 +35,15 @@ footer.page-footer {
   .activity-list ul li p {
     margin: 0;
     font-size: 1.2em; }
+  .activity-list ul li a {
+    outline: none; }
 
-.about-openmonth {
+.full-width-intro {
   padding: 0 50px; }
+
+.schedule-table th, .schedule-table td {
+  text-align: center;
+  font-size: 1.5em; }
+  .schedule-table th img, .schedule-table td img {
+    width: 1.5em;
+    vertical-align: middle; }
