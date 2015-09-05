@@ -484,6 +484,14 @@
   <script type="text/javascript">
     (function($) {
       $(function() {
+        isFirefox = typeof InstallTrigger !== 'undefined';
+        if(isFirefox) {
+          alTrigger = 500;
+          aiTrigger = 200;
+        } else {
+          alTrigger = 200;
+          aiTrigger = 100;
+        }
 
         $('.modal-trigger').leanModal();
         $('.button-collapse').sideNav();
@@ -495,15 +503,15 @@
         $('.tooltipped').tooltip({delay: 50});
         var options = [{
           selector: '#speech-topic',
-          offset: ($('.activity-list').offset().top - 250),
+          offset: alTrigger,
           callback: 'Materialize.showStaggeredList("#speech-topic")'
         }, {
           selector: '#workshop-topic',
-          offset: ($('.activity-list').offset().top - 250),
+          offset: alTrigger,
           callback: 'Materialize.showStaggeredList("#workshop-topic")'
         }, {
           selector: '#activity-intro',
-          offset: ($('#activity-intro').offset().top - 250),
+          offset: aiTrigger,
           callback: 'Materialize.fadeInImage("#activity-intro")'
         }];
         Materialize.scrollFire(options);
