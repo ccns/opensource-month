@@ -37,6 +37,8 @@ footer.page-footer {
     font-size: 1.2em; }
   .activity-list ul li a {
     outline: none; }
+    .activity-list ul li a .row {
+      padding: 10px 0px; }
 
 .full-width-intro {
   padding: 0 50px; }
