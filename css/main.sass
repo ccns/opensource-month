@@ -6,6 +6,14 @@ html, body
 
 @include selection(#F06292, #fff)
 
+.full-width-intro
+  @include breakpoint(pc)
+    padding: 0 50px
+  @include breakpoint(pad)
+    padding: 0 50px
+  @include breakpoint(mobile)
+    padding: 0 25px
+
 .brand-logo
   @include breakpoint(mobile)
     font-size: 1.8rem !important
@@ -16,7 +24,8 @@ html, body
   height: auto
   .section
     width: 100%
-    text-shadow: 2px 2px 5px #000
+    h1, h5
+      text-shadow: 2px 2px 5px #000
 
 footer.page-footer
   margin: 0
@@ -44,14 +53,6 @@ footer.page-footer
       outline: none
       .row
         padding: 10px 0px
-
-.full-width-intro
-  @include breakpoint(pc)
-    padding: 0 50px
-  @include breakpoint(pad)
-    padding: 0 50px
-  @include breakpoint(mobile)
-    padding: 0 25px
 
 .schedule-table
   th, td
