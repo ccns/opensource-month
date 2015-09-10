@@ -2,7 +2,15 @@
 html, body {
   font-family: 'Roboto', '微軟正黑體', sans-serif; }
 
-@media only screen and (max-width: 320px) {
+::selection {
+  background: #F06292;
+  color: #fff; }
+
+::-moz-selection {
+  background: #F06292;
+  color: #fff; }
+
+@media only screen and (max-width: 640px) {
   .brand-logo {
     font-size: 1.8rem !important; } }
 
@@ -11,7 +19,8 @@ html, body {
   color: rgba(255, 255, 255, 0.9);
   height: auto; }
   .parallax-container .section {
-    width: 100%; }
+    width: 100%;
+    text-shadow: 2px 2px 5px #000; }
 
 footer.page-footer {
   margin: 0; }
@@ -40,8 +49,17 @@ footer.page-footer {
     .activity-list ul li a .row {
       padding: 10px 0px; }
 
-.full-width-intro {
-  padding: 0 50px; }
+@media only screen and (min-width: 1024px) {
+  .full-width-intro {
+    padding: 0 50px; } }
+
+@media only screen and (max-width: 1024px), screen and (min-width: 640px) {
+  .full-width-intro {
+    padding: 0 50px; } }
+
+@media only screen and (max-width: 640px) {
+  .full-width-intro {
+    padding: 0 25px; } }
 
 .schedule-table th, .schedule-table td {
   text-align: center;

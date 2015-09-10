@@ -45,19 +45,16 @@
     <li><a href="http://web.ccns.ncku.edu.tw/">CCNS</a></li>
   </ul>
 
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
+  <div id="index-banner" class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot valign">
       <div class="container">
-        <br>
-        <br>
-        <br>
-        <br>
         <h1 class="header center pink-text text-lighten-2">2015 成大開源月</h1>
         <div class="row center">
           <h5 class="header col s12 grey-text text-lighten-2">敞開心胸，擁抱開源</h5>
         </div>
-        <br>
-        <br>
+        <div class="row center">
+          <a href="#about" class="btn waves-effect waves-light pink lighten-1">Let's Go!</a>
+        </div>
       </div>
     </div>
     <div class="parallax">
@@ -286,7 +283,7 @@
       </div>
     </div>
     <div class="parallax">
-      <img src="http://materializecss.com/templates/parallax-template/background2.jpg" alt="Unsplashed background img 2">
+      <img src="img/background2.jpg" alt="Unsplashed background img 2">
     </div>
   </div>
 
@@ -318,7 +315,7 @@
       </div>
     </div>
     <div class="parallax">
-      <img src="http://materializecss.com/templates/parallax-template/background3.jpg" alt="Unsplashed background img 3">
+      <img src="img/background3.jpg" alt="Unsplashed background img 3">
     </div>
   </div>
 
@@ -479,6 +476,8 @@
           alTrigger = 200;
           aiTrigger = 100;
         }
+
+        $('#index-banner').css("height",$(window).height())
 
         $('.modal-trigger').leanModal();
         $('.button-collapse').sideNav();

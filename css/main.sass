@@ -1,19 +1,22 @@
 // out: ./main.css
-@import "rwd"
+@import "mixin"
 
 html, body
   font-family: 'Roboto', '微軟正黑體', sans-serif
+
+@include selection(#F06292, #fff)
 
 .brand-logo
   @include breakpoint(mobile)
     font-size: 1.8rem !important
 
 .parallax-container
-  min-height: 380px;
+  min-height: 380px
   color: rgba(255, 255, 255, .9)
   height: auto
   .section
     width: 100%
+    text-shadow: 2px 2px 5px #000
 
 footer.page-footer
   margin: 0
@@ -43,7 +46,12 @@ footer.page-footer
         padding: 10px 0px
 
 .full-width-intro
-  padding: 0 50px
+  @include breakpoint(pc)
+    padding: 0 50px
+  @include breakpoint(pad)
+    padding: 0 50px
+  @include breakpoint(mobile)
+    padding: 0 25px
 
 .schedule-table
   th, td
