@@ -68,3 +68,6 @@ footer.page-footer {
   .schedule-table th img, .schedule-table td img {
     width: 1.5em;
     vertical-align: middle; }
+
+.modal-content h4 small {
+  font-size: 50%; }
